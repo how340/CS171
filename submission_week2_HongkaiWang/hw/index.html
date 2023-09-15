@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW2 Hongkai Wang page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" style="margin-top: 1%;">
+        <div class="row justify-content-center" id="title">
+            <h1>CS171 - Week2</h1>
+        </div>
+        <div class="row justify-content-center">
+            <h2>Created by Hongkai Wang</h2>
+        </div>
+    
+        <!-- Divider -->
+        <hr/>
+
+        <div class="row subtitle justify-content-center" style="margin-bottom: 1%;">
+            1. Sortable Table
+        </div>
+        <div class="col justify-content-center">
+            <table class="table table-hover table-striped sortable">
+                <thead>
+                <tr>
+                    <th scope="col">Country</th>
+                    <th scope="col">1990</th>
+                    <th scope="col">2000</th>
+                    <th scope="col">2014</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Central African Republic</th>
+                    <td>51.9</td>
+                    <td>51.4</td>
+                    <td>46.9</td>
+                </tr>
+                <tr>
+                    <th scope="row">Chad</th>
+                    <td>65</td>
+                    <td>52</td>
+                    <td>46.4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Haiti</th>
+                    <td>52.1</td>
+                    <td>42.8</td>
+                    <td>37.3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Madagascar</th>
+                    <td>44.8</td>
+                    <td>44.1</td>
+                    <td>36.3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Sierra Leone</th>
+                    <td>58.8</td>
+                    <td>53.5</td>
+                    <td>38.9</td>
+                </tr>
+                <tr>
+                    <th scope="row">Timor-Leste</th>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>40.7</td>
+                </tr>
+                <tr>
+                    <th scope="row">Zambia</th>
+                    <td>47.0</td>
+                    <td>50.9</td>
+                    <td>41.1</td>
+                </tr>
+                </tbody>
+            </table>   
+        </div>
+        <div class="row justify-content-center">
+            <p id="note">*Data underlying the calculation of the 1990, 2000 and 2014 Global Hunger Index Scores</p>
+        </div>
+
+        <hr/><!-- Divider -->
+
+        <div class="row subtitle justify-content-center" style="margin-bottom: 1%;">
+            2. Infographic Design Critique
+        </div>
+
+        <div class="row justify-content-center">
+            <p>The following section is focused on this question: what is trend in the global life expectancy over the period from 2000 to 2015?</p>
+        </div>
+
+        <hr class="between"/><!-- Divider -->
+        
+        <div class="row justify-content-center">
+            <div class="col-5 justify-content-center">
+                <img src="images/21-Box-plots.png" width="100%">
+            </div>
+            <div class="col-7 justify-content-center">
+                <p>This graph is a great demonstration of the trend in the distribution of the world life expectancy over the 16-year period between 2000 and 2015.</p>
+                <p>A boxplot is a direct and clear way of displaying important discrete numerical summary statistics on a population.
+                    A boxplot can effectively capture quantile information, range, and outliers. Because of the graph choice, we see a clear
+                    trend of a slowly increasing global life expectancy, reflected by the increasing median and increasing extreme (upper and lower) values.
+                </p>
+                <p>
+                    Since we are interested in the performance of global life expectancy, we are less concerned about individuality of each 
+                    data point. Replacing individual data points with boxes and lines reduces visual clutter and allow us to focus on the important question. 
+                    Furthermore, different realization of each statistics (i.e. range as box/lines; quantile as horizontal lines) allows the reader to 
+                    quickly distinguish between the different information.
+                </p>
+            </div>
+        </div>
+
+        <hr class="between"/><!-- Divider -->
+        <div class="row justify-content-center">
+            <div class="col-5 justify-content-center">
+                <img src="images/22-Annual-dots.png" width="100%">
+            </div>
+            <div class="col-7 justify-content-center">
+                <p>In comparison, this graph does a worse job in reflecting the global trend in life expectancy.</p>
+                <p>First off, the second graph chooses to focus on the individual statistics of each country by showing the discrete life expectancy value of each country as a dot.
+                    This causes some visual clutter on the graph. Importantly, this choice doesn't introduce any additional information as there is no 
+                    way to distinguish between each data point (all countries look the same). Thus, there is little reason to go in this direction.
+                </p>
+                <p>Secondly, it is very difficult to gauge the shift in the middle point of the population. Visually, we can attempt to gauge the shift in population
+                    through the top and bottom extremes. However, this could be deceptive in many situations, where the extremes could have little effect on the median/mean.
+                </p>
+                <p>In conclusion, the first graph does a much better job on displaying trends in global life expectancy than the second graph due to the better choice in the types of graph employed.</p>
+            </div>
+        </div>
+        
+        
+
+
+    </div>
+
+    <script src="js/sorttable.js"></script>
+</body>
+</html>

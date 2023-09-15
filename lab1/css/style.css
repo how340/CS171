@@ -1,0 +1,68 @@
+/* Style your headings, paragraphs, and other text elements as needed */
+body {
+    background: linear-gradient(to bottom,#d06969, #fff); /* Gradient background */
+    font-family: Arial, sans-serif; 
+    color: #333;
+    margin: 0; 
+    padding: 0;
+  }
+  
+h1 {
+font-size: 36px;
+margin-bottom: 20px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Descendant Selector for Harvard facts paragraphs */
+#content p {
+    margin: 10px 0;
+}
+
+/* Custom Hover-Effect for hyperlinks */
+a:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+/* Padding and Margin properties */
+p {
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+img {
+    padding: 1%;
+}
+
+body {
+    margin: 1%;
+    padding: 1%;
+}
+
+.container {
+max-width: 800px; 
+margin: 0 auto;
+padding: 20px; 
+background-color: #fff; 
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: hotpink;
+}
+
+.nav-link {
+    color: white;
+}
