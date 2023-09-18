@@ -26,64 +26,70 @@
         <div class="row subtitle justify-content-center" style="margin-bottom: 1%;">
             1. Sortable Table
         </div>
-        <div class="col justify-content-center">
-            <table class="table table-hover table-striped sortable">
-                <thead>
-                <tr>
-                    <th scope="col">Country</th>
-                    <th scope="col">1990</th>
-                    <th scope="col">2000</th>
-                    <th scope="col">2014</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">Central African Republic</th>
-                    <td>51.9</td>
-                    <td>51.4</td>
-                    <td>46.9</td>
-                </tr>
-                <tr>
-                    <th scope="row">Chad</th>
-                    <td>65</td>
-                    <td>52</td>
-                    <td>46.4</td>
-                </tr>
-                <tr>
-                    <th scope="row">Haiti</th>
-                    <td>52.1</td>
-                    <td>42.8</td>
-                    <td>37.3</td>
-                </tr>
-                <tr>
-                    <th scope="row">Madagascar</th>
-                    <td>44.8</td>
-                    <td>44.1</td>
-                    <td>36.3</td>
-                </tr>
-                <tr>
-                    <th scope="row">Sierra Leone</th>
-                    <td>58.8</td>
-                    <td>53.5</td>
-                    <td>38.9</td>
-                </tr>
-                <tr>
-                    <th scope="row">Timor-Leste</th>
-                    <td>-</td>
-                    <td>-</td>
-                    <td>40.7</td>
-                </tr>
-                <tr>
-                    <th scope="row">Zambia</th>
-                    <td>47.0</td>
-                    <td>50.9</td>
-                    <td>41.1</td>
-                </tr>
-                </tbody>
-            </table>   
-        </div>
+        <!-- for the table, since we don't really have other contents on the side, we can just choose a col width we like-->
         <div class="row justify-content-center">
-            <p id="note">*Data underlying the calculation of the 1990, 2000 and 2014 Global Hunger Index Scores</p>
+            <div class="col-5 justify-content-center">
+                <table class="table table-hover table-striped sortable">
+                    <thead>
+                    <tr>
+                        <th scope="col">Country</th>
+                        <th scope="col">1990</th>
+                        <th scope="col">2000</th>
+                        <th scope="col">2014</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Central African Republic</th>
+                        <td>51.9</td>
+                        <td>51.4</td>
+                        <td>46.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Chad</th>
+                        <td>65</td>
+                        <td>52</td>
+                        <td>46.4</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Haiti</th>
+                        <td>52.1</td>
+                        <td>42.8</td>
+                        <td>37.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Madagascar</th>
+                        <td>44.8</td>
+                        <td>44.1</td>
+                        <td>36.3</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sierra Leone</th>
+                        <td>58.8</td>
+                        <td>53.5</td>
+                        <td>38.9</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Timor-Leste</th>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>40.7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Zambia</th>
+                        <td>47.0</td>
+                        <td>50.9</td>
+                        <td>41.1</td>
+                    </tr>
+                    </tbody>
+                </table>   
+            </div>
+        </div>
+        
+        <div class="row justify-content-center">
+            <div class="col-5 justify-content-center">
+                <p id="note">*Data underlying the calculation of the 1990, 2000 and 2014 Global Hunger Index Scores</p>
+            </div>
         </div>
 
         <hr/><!-- Divider -->
@@ -124,12 +130,12 @@
             </div>
             <div class="col-7 justify-content-center">
                 <p>In comparison, this graph does a worse job in reflecting the global trend in life expectancy.</p>
-                <p>First off, the second graph chooses to focus on the individual statistics of each country by showing the discrete life expectancy value of each country as a dot.
+                <p>First off, the second graph chooses to focus on the individual statistics of each country by showing the discrete numerical life expectancy value of each country as a dot along a vertical line.
                     This causes some visual clutter on the graph. Importantly, this choice doesn't introduce any additional information as there is no 
                     way to distinguish between each data point (all countries look the same). Thus, there is little reason to go in this direction.
                 </p>
                 <p>Secondly, it is very difficult to gauge the shift in the middle point of the population. Visually, we can attempt to gauge the shift in population
-                    through the top and bottom extremes. However, this could be deceptive in many situations, where the extremes could have little effect on the median/mean.
+                    through the top and bottom extremes. However, this could be deceptive in many situations, where the movement of extreme values could have little effect on the median/mean.
                 </p>
                 <p>In conclusion, the first graph does a much better job on displaying trends in global life expectancy than the second graph due to the better choice in the types of graph employed.</p>
             </div>

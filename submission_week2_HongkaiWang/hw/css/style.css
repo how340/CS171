@@ -4,6 +4,10 @@ body {
     font-style: normal;
 }
 
+.tr {
+    font-weight: bold;
+}
+
 #title {
     margin-top: 2%;
     padding: 1%;
