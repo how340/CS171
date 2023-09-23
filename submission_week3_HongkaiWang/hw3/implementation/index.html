@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - HW3</title>
+
+		<!-- Load CSS libraries -->
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+
+		<!-- own CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+
+	<!-- ********************** ADD YOUR HTML-ELEMENTS HERE *********************** -->	
+	<!-- Make sure to use proper bootstrap! -->
+	<!-- You will need a div-container with the id: 'chart-area' -->
+	
+	<!-- Page logo-->	 
+
+	<div class="container">
+		<div class="row">
+			<div class="col text-center" id="logo"><img src="img/PizzaWorld-Logo.png"></div>
+		</div>
+	</div>
+
+	<!-- Page title-->
+	<div class="container">
+		<div class="row text-center">
+			<h4>created by Hongkai Wang</h2>
+		</div>
+	</div>
+
+	<!-- Page divider-->
+	<div class="container">
+		<hr>
+	</div>
+
+	<div class='container' id="chart-container">
+	
+		<div class="row" >
+			<h2 class="col-7 justify-content-center text-center">Pizza Delivery Statistics</h2>
+		</div>
+		<!-- Drop down selection buttons-->	 
+		<div class="row" id="top-selector">
+			<!-- Area -->
+			<div class="col-5 text-center">Area selection</div>
+			<div class="col-2">
+				<select class="form-select" aria-label="Default select example" id="area-select" onchange="createVisualization()">
+					<option selected value="all">All</option>
+					<option value="Boston">Boston</option>
+					<option value="Cambridge">Cambridge</option>
+					<option value="Somerville">Somerville</option>
+				</select>
+			</div>
+		</div>
+		<div class="row" id="bot-selector">
+			<!-- order source type -->
+			<div class="col-5 text-center">Order type selection</div>
+			<div class="col-2">
+			<select class="form-select" aria-label="Default select example" id="type-select" onchange="createVisualization()">
+				<option selected value="all">All</option>
+				<option value="web">Web</option>
+				<option value="phone">Phone</option>
+				</select>
+			</div>
+		</div>
+
+		<!-- Graphed chart-->
+		<div class="row">
+		
+			<div class="col" id="chart-area"></div>
+
+		</div>
+		<!-- tool tip-->
+		<div id="tooltip" class="hidden">
+			<p><strong>Deliveries</strong></p>
+			<p><span id="value"></span></p>
+		</div>
+	</div>
+
+	<!-- Page divider-->
+	<div class="container">
+		<hr>
+	</div>
+	
+	<div class="container" id="table-container">
+		<div class="row" >
+			<h2 class="text-center">Detailed Delivery Stat Breakdown</h2>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-5" id="table-area">
+				<table class="table table-striped table-bordered table-hover">
+					<tbody>
+					<tr>
+						  <th>Delivery Count</th>
+						<th id="deliveryCount"></th>
+					</tr>
+					<tr>
+						<th>Pizza Count</th>
+						<th id="pizzaCount"></th>
+					</tr>
+					<tr>
+						<th>Average Delivery Time</th>
+						<th id="averageDeliveryTime"></th>
+					</tr>
+					<tr>
+						<th>Total Sales</th>
+						<th id="totalSales"></th>
+					</tr>
+					<tr>
+						<th>Feedback Count</th>
+						<th id="feedbackCount"></th>
+					</tr>
+					<tr>
+						<th>Feedback Low</th>
+						<th id="feedbackLo"></th>
+					</tr>
+					<tr>
+						<th>Feedback Medium</th>
+						<th id="feedbackMe"></th>
+					</tr>
+					<tr>
+						<th>Feedback High</th>
+						<th id="feedbackHi"></th>
+					</tr>
+					</tbody>
+				  </table>
+			</div>
+		</div>
+		<div class="row justify-content-center" >
+			<p class="col-5 text-center">*The table stat breakdown shares the same grouping as the graph above. 
+				Adjust the selector to find statistics that you want. 
+			</p>
+		</div>
+	</div>
+
+	<!-- Page divider-->
+	<div class="container" >
+		<hr>
+	</div>
+
+	<div class="container" id="visualization-critique">
+		<div class="row" >
+			<h2 class="text-center" style="margin-bottom:1%">Visualization Critique</h2>
+		</div>
+
+		<div class="row">
+			<div class="col-5" ><img src="img/google-salary.png" width="100%"></div>
+			<div class="col-7">
+				<p>This visualization is clearly targeted at the people interested in the compensation of tech companies, especially at Google. 
+					The graph attempts to display information on the compensation range of different positions at Google, and tries to answer 
+					the question that how well are these people at google paid. The data displayed here are interval 
+					(ordinal that could be have mathematical operations) data in the format of the pie chart. 
+				</p>
+				<p>
+					For each specific group of employee, their data is projected onto the pie chart through different color codings and a slice of the pie. 
+					The larger the salary range is, the larger the area occupied on the chart is. 
+				</p>
+				<P>In my opinion, this visualization is not a good visualition. First, the graph is a bit busy visually. There are a lot of contrasting colors overlapping each other, 
+					and it can be difficult to discern different groups when they share a similar range. Second, the usage of pie 
+					chart here is not really appropriate. Pie chart should be used when everything on the chart can add to 1 or 100%. 
+					Here, the overall pie is used to convey a range of salary, which is not the best portrayal of information. 
+					Remaking this visualization as a boxplot can be very helpful here. Lastly, the human figures here don't really play a big role 
+					in this visualization. Replacing them with a straightforward color legend will be much cleaner. 
+				</P>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page divider-->
+	<div class="container" >
+		<hr>
+		<div class="row justify-content-center">
+			<p class="col-5 text-center">Created for CS171 as part of HW3 by Hongkai Wang</p>
+		</div>
+	</div>
+
+	<!-- embedding JS libraries -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<!-- data -->
+	<script src="data/delivery-data.js"></script>
+	<script src="data/feedback-data.js"></script>
+
+	<!-- bar chart -->
+	<script src="js/barchart.js"></script>
+
+	<!-- ****** TODO: FILTER DATA, DISPLAY BAR CHART & KEY FIGURES ****** -->
+	<script src="js/main.js"></script>
+	</body>
+</html>
