@@ -1,0 +1,61 @@
+
+@font-face {
+    font-family: "glyphicons";
+    src: url("fonts/glyphicons-halflings-regular.eot");
+    src: url("fonts/glyphicons-halflings-regular.woff") format("woff"),
+    url("fonts/glyphicons-halflings-regular.woff2") format("woff2"),
+    url("fonts/glyphicons-halflings-regular.ttp") format("TrueType"),
+    url("fonts/glyphicons-halflings-regular.svg") format("svg");
+    }
+
+body {
+    margin:1%;
+    font-family: glyphicons;
+    background-color: aliceblue;
+}
+
+.main{
+    background-color: rgb(162, 187, 210);
+}
+.vl {
+    border-right: 1px solid rgb(251, 239, 239);
+    height: 800px;
+    width: 2cap;
+  }
+
+img {
+    height: 400px;
+    width: auto; 
+    
+}
+
+/* change bar graph color */
+rect {
+    fill: #ba96cc;
+}
+
+rect:hover{
+    fill: #5f4d68;
+    cursor: pointer;
+}
+
+
+/*change bar label*/
+.building-label {
+    text-anchor:end;
+}
+
+.building-label:hover {
+    fill: #ada2b3;
+    text-anchor:end;
+    cursor: pointer;
+}
+
+#more{
+    margin: 3%;
+}
+
+#units {
+    float:right;
+    text-align: centerss;
+}
