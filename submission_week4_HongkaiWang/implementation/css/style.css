@@ -59,3 +59,9 @@ rect:hover{
     float:right;
     text-align: centerss;
 }
+
+
+#sketch {
+    height:700px; 
+    width: auto;  
+}
