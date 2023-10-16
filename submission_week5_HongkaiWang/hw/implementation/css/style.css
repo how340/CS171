@@ -1,0 +1,58 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: rgb(232, 211, 185);
+}
+
+
+header {
+    background-image: url('/img/camp.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: auto;
+
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+    
+}
+
+.title{
+    width: 700px;
+    background-color: rgba(148, 133, 133, 0.3);
+    margin: auto; /* this can center the element */
+    color: white;
+}
+
+.graph-label {
+    text-decoration: underline;
+    font-weight:300;
+}
+
+.percent-label {
+    font-size: smaller;
+    fill: rgb(11, 9, 2);
+}
+
+.tool-tip {
+    font-size: small;
+}
+
+.area-fill {
+    fill: rgb(213, 166, 166);
+    stroke: rgb(233, 208, 208);
+}
+
+.area-top {
+    stroke:rgb(150, 117, 76)
+}
+
+.graph-bars {
+    fill: rgb(111, 96, 223);
+}
+
+.note {
+    font-size: x-small
+}
